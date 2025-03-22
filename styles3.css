@@ -1,0 +1,55 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f8f8f8;
+   color: #333;
+}
+
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+
+.column {
+   text-align: center;
+}
+
+
+h2 {
+   margin-bottom: 20px;
+}
+
+
+.abonnement button {
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   margin: 5px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.abonnement button:hover {
+   background-color: #0056b3;
+}
+
+
+.abonnement button[name="deconnexion"] {
+   background-color: #dc3545;
+}
+
+.abonnement button[name="deconnexion"]:hover {
+   background-color: #c82333;
+}

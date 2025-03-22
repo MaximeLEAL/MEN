@@ -1,0 +1,30 @@
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+
+.rating label:before {
+    content: '\2605';
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ddd;
+}
+
+.rating input:checked ~ label:before {
+    color: #f90;
+}
